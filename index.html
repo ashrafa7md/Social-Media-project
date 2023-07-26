@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>boot</title>
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css" />
+    <script
+      src="https://kit.fontawesome.com/3e132b2597.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        #left{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            justify-content: center;
+            align-items: center;
+            float: left;
+        }
+        #center{
+            display: flex;
+            flex-direction: column;
+            width: 55%;
+            justify-content: center;
+            align-items: center;
+            float: left;
+        }
+        #right{
+            display: flex;
+            flex-direction: column;
+            width: 15%;
+            justify-content: center;
+            align-items: center
+        }
+        @media(max-width:1024px){
+            #right{
+                display: none;
+            }
+            #center{
+                width: 65%;
+            }
+        }
+        @media(max-width:767px){
+            #left{
+                display: none;
+            }
+            #center{
+                width: 95%;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <nav style="background-color: #174a4d" class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><i
+            style="margin-right: 10px; color: #fff"
+            class="fa-solid fa-house-chimney"
+          ></i
+          ><span style="font-weight: bold; color: #fff">Gamers</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><i
+                  style="color: #fff; margin-right: 20px"
+                  class="fa-solid fa-earth-africa"
+                ></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i
+                  style="color: #fff; margin-right: 20px"
+                  class="fa-solid fa-user"
+                ></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i
+                  style="color: #fff; margin-right: 20px"
+                  class="fa-solid fa-envelope"
+                ></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i
+                  style="color: #fff; margin-right: 20px"
+                  class="fa-solid fa-bell position-relative"
+                >
+                  <span
+                    style="font-size: x-small"
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success"
+                  >
+                    3
+                  </span>
+                </i></a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <img
+              style="border-radius: 50%; margin-right: 20px"
+              width="50"
+              height="50"
+              src="ashraf_1.jpg"
+              alt=""
+            />
+          </form>
+        </div>
+      </div>
+    </nav>
+    <aside
+      id="left"
+      >
+      <div
+        class="info"
+        style="
+          margin-top: 30px;
+          box-shadow: 1px 1px 15px 9px gray;
+          width: 80%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-top: 20px;
+        "
+      >
+        <h2 style="margin-bottom: 15px">My Profile</h2>
+        <img
+          style="border-radius: 50%; margin-right: 20px"
+          width="100"
+          height="100"
+          src="ashraf_1.jpg"
+          alt=""
+        />
+        <div
+          class="icon"
+          style="width: 100%; margin-top: 20px; color: grey; font-weight: bold"
+        >
+          <ul style="list-style: none">
+            <li>
+              <i
+                style="margin-right: 15px; margin-bottom: 15px; color: #174a4d"
+                class="fa-solid fa-pen"
+              ></i
+              >Designer, UI
+            </li>
+            <li>
+              <i
+                style="margin-right: 15px; margin-bottom: 15px; color: #174a4d"
+                class="fa-solid fa-house-chimney"
+              ></i
+              >Sohag,Egypt
+            </li>
+            <li>
+              <i
+                style="margin-right: 15px; margin-bottom: 15px; color: #174a4d"
+                class="fa-solid fa-calendar-days"
+              ></i
+              >April 1, 1988
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="myGroup"
+        style="
+          margin-top: 30px;
+          box-shadow: 1px 1px 15px 9px gray;
+          width: 80%;
+          padding-top: 20px;
+          background-color: #174a4d;
+          color: #fff;
+        "
+      >
+        <ul style="list-style: none">
+          <li>
+            <i
+              style="margin-right: 15px; margin-bottom: 15px; color: #fff"
+              class="fa-solid fa-people-group"
+            ></i
+            >My Groups
+          </li>
+          <li>
+            <i
+              style="margin-right: 15px; margin-bottom: 15px; color: #fff"
+              class="fa-solid fa-calendar-days"
+            ></i
+            >My Events
+          </li>
+          <li>
+            <i
+              style="margin-right: 15px; margin-bottom: 15px; color: #fff"
+              class="fa-solid fa-images"
+            ></i
+            >My Photos
+          </li>
+        </ul>
+      </div>
+      <div
+        class="interests"
+        style="
+          margin-top: 30px;
+          box-shadow: 1px 1px 15px 9px gray;
+          width: 80%;
+          padding-top: 20px;
+        "
+      >
+        <h4 style="margin-left: 25px">Interestes</h4>
+        <ul style="list-style: none">
+          <li>
+            <button
+              style="
+                background-color: #174a4d;
+                color: #fff;
+                border-color: #174a4d;
+                font-size: x-small;
+                font-weight: bold;
+              "
+            >
+              News
+            </button>
+            <button
+              style="
+                background-color: #235c5f;
+                color: #fff;
+                border-color: #174a4d;
+                font-size: x-small;
+                font-weight: bold;
+              "
+            >
+              W3school
+            </button>
+            <button
+              style="
+                background-color: #174a4d;
+                color: #fff;
+                border-color: #174a4d;
+                font-size: x-small;
+                font-weight: bold;
+              "
+            >
+              Label
+            </button>
+            <button
+              style="
+                background-color: #174a4d;
+                color: #fff;
+                border-color: #174a4d;
+                font-size: x-small;
+                font-weight: bold;
+              "
+            >
+              Games
+            </button>
+          </li>
+          <li>
+            <button
+              style="
+                background-color: #174a4dbb;
+                color: #fff;
+                border-color: #174a4dbb;
+                font-size: x-small;
+                font-weight: bold;
+              "
+            >
+              Friendes
+            </button>
+            <button
+              style="
+                background-color: #174a4d7e;
+                color: #fff;
+                border-color: #174a4d7e;
+                font-size: x-small;
+                font-weight: bold;
+              "
+            >
+              Games
+            </button>
+            <button
+              style="
+                background-color: #174a4daf;
+                color: #fff;
+                border-color: #174a4daf;
+                font-size: x-small;
+                font-weight: bold;
+              "
+            >
+              Friendes
+            </button>
+            <button
+              style="
+                background-color: #558184ae;
+                color: black;
+                border-color: #558184ae;
+                font-size: x-small;
+                font-weight: bold;
+              "
+            >
+              Food
+            </button>
+            <button
+              style="
+                background-color: #54b7bc88;
+                color: black;
+                border-color: #54b7bc88;
+                font-size: x-small;
+                font-weight: bold;
+              "
+            >
+              Design
+            </button>
+          </li>
+          <li>
+            <button
+              style="
+                background-color: #5f72731f;
+                color: black;
+                border-color: #5f72731f;
+                font-size: x-small;
+                font-weight: bold;
+              "
+            >
+              Arts
+            </button>
+            <button
+              style="
+                background-color: #54b7bc00;
+                color: black;
+                border-color: #54b7bc00;
+                font-size: x-small;
+                font-weight: bold;
+              "
+            >
+              Photos
+            </button>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- *********************************************************************************************************************************** -->
+    <div
+      id="center">
+      <div
+        class="inp"
+        style="
+          margin-top: 30px;
+          box-shadow: 1px 1px 15px 9px gray;
+          width: 95%;
+          display: flex;
+          padding-top: 20px;
+          padding-left: 10px;
+          display: flex;
+          flex-direction: column;
+          padding-right: 15px;
+          color: gray;
+        "
+      >
+        <h6>Social Media template By Ashrafa7md</h6>
+        <br />
+        <input
+          style="
+            padding-left: 10px;
+            color: black;
+            height: 50px;
+            margin-bottom: 10px;
+          "
+          type="text"
+          value="Status : Feeling Blue"
+        />
+        <button
+          style="
+            margin-bottom: 15px;
+            width: 16%;
+            background-color: #174a4dbb;
+            color: #fff;
+            border-color: #174a4dbb;
+            font-weight: bold;
+          "
+        >
+          <i
+            style="margin-right: 15px; margin-bottom: 15px; color: #fff"
+            class="fa-solid fa-pen"
+          ></i
+          >Post
+        </button>
+      </div>
+      <div
+        class="post"
+        style="
+          margin-top: 30px;
+          box-shadow: 1px 1px 15px 9px gray;
+          width: 95%;
+          display: flex;
+          padding-top: 20px;
+          padding-left: 10px;
+          display: flex;
+          flex-direction: column;
+          padding-right: 15px;
+          color: gray;
+        "
+      >
+        <div
+          class="myImg"
+          style="display: flex; justify-content: space-between;margin-bottom: 25px;"
+        >
+          <div class="img">
+            <img
+              style="border-radius: 50%; margin-right: 20px"
+              width="50"
+              height="50"
+              src="1.jpg"
+              alt=""
+            /><span style="color: black;font-weight: bold;">Johan Doe</span>
+          </div>
+          <div class="num">1 min</div>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          perspiciatis iure incidunt possimus! Assumenda sapiente soluta nam
+          voluptatibus repellat ipsum dicta, magnam, itaque, dolores incidunt
+          eius odio sed perspiciatis facere?
+        </p>
+        <div class="imging" style="display: flex; gap: 4%;padding-bottom: 20px;">
+            <img style="width: 48%;"  height="200" src="3.jpg" alt="">
+            <img style="width: 48%;"  height="200" src="4.jpg" alt="">
+        </div>
+        <div class="buttons" style="display: flex; gap: 2%;">
+            <button
+          style="
+            margin-bottom: 15px;
+            width: 16%;
+            background-color: #174a4dbb;
+            color: #fff;
+            border-color: #174a4dbb;
+            font-weight: bold;
+          "
+        >
+          <i
+            style="margin-right: 15px; margin-bottom: 15px; color: #fff"
+            class="fa-solid fa-thumbs-up"
+          ></i
+          >Like
+        </button>
+        <button
+          style="
+            margin-bottom: 15px;
+            width: 20%;
+            background-color: #174a4dbb;
+            color: #fff;
+            border-color: #174a4dbb;
+            font-weight: bold;
+          "
+        >
+          <i
+            style="margin-right: 15px; margin-bottom: 15px; color: #fff"
+            class="fa-solid fa-comment"
+          ></i
+          >Comment
+        </button>
+        </div>
+      </div>
+      <!-- ********************************************************************************************************************************* -->
+      <div
+        class="post"
+        style="
+          margin-top: 30px;
+          box-shadow: 1px 1px 15px 9px gray;
+          width: 95%;
+          display: flex;
+          padding-top: 20px;
+          padding-left: 10px;
+          display: flex;
+          flex-direction: column;
+          padding-right: 15px;
+          color: gray;
+        "
+      >
+        <div
+          class="myImg"
+          style="display: flex; justify-content: space-between;margin-bottom: 25px;"
+        >
+          <div class="img">
+            <img
+              style="border-radius: 50%; margin-right: 20px"
+              width="50"
+              height="50"
+              src="5.jpg"
+              alt=""
+            /><span style="color: black;font-weight: bold;">Jan Doe</span>
+          </div>
+          <div class="num">16 min</div>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          perspiciatis iure incidunt possimus! Assumenda sapiente soluta nam
+          voluptatibus repellat ipsum dicta, magnam, itaque, dolores incidunt
+          eius odio sed perspiciatis facere?
+        </p>
+        <div class="buttons" style="display: flex; gap: 2%;">
+            <button
+          style="
+            margin-bottom: 15px;
+            width: 16%;
+            background-color: #174a4dbb;
+            color: #fff;
+            border-color: #174a4dbb;
+            font-weight: bold;
+          "
+        >
+          <i
+            style="margin-right: 15px; margin-bottom: 15px; color: #fff"
+            class="fa-solid fa-thumbs-up"
+          ></i
+          >Like
+        </button>
+        <button
+          style="
+            margin-bottom: 15px;
+            width: 20%;
+            background-color: #174a4dbb;
+            color: #fff;
+            border-color: #174a4dbb;
+            font-weight: bold;
+          "
+        >
+          <i
+            style="margin-right: 15px; margin-bottom: 15px; color: #fff"
+            class="fa-solid fa-comment"
+          ></i
+          >Comment
+        </button>
+        </div>
+      </div>
+      <!-- ******************************************************************************************************************************** -->
+      <div
+        class="post"
+        style="
+          margin-top: 30px;
+          box-shadow: 1px 1px 15px 9px gray;
+          width: 95%;
+          display: flex;
+          padding-top: 20px;
+          padding-left: 10px;
+          display: flex;
+          flex-direction: column;
+          padding-right: 15px;
+          color: gray;
+        "
+      >
+        <div
+          class="myImg"
+          style="display: flex; justify-content: space-between;margin-bottom: 25px;"
+        >
+          <div class="img">
+            <img
+              style="border-radius: 50%; margin-right: 20px"
+              width="50"
+              height="50"
+              src="6.jpg"
+              alt=""
+            /><span style="color: black;font-weight: bold;">Angles Jan</span>
+          </div>
+          <div class="num">32 min</div>
+        </div>
+        <p>
+          Have you seen this?
+        </p>
+        <div class="imging" style="display: flex; gap: 4%;padding-bottom: 20px;">
+            <img style="width: 98%;height: 27rem;"  height="200" src="8.jpg" alt="">
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            perspiciatis iure incidunt possimus! Assumenda sapiente soluta nam
+            voluptatibus repellat ipsum dicta, magnam, itaque, dolores incidunt
+            eius odio sed perspiciatis facere?
+          </p>
+        <div class="buttons" style="display: flex; gap: 2%;">
+            <button
+          style="
+            margin-bottom: 15px;
+            width: 16%;
+            background-color: #174a4dbb;
+            color: #fff;
+            border-color: #174a4dbb;
+            font-weight: bold;
+          "
+        >
+          <i
+            style="margin-right: 15px; margin-bottom: 15px; color: #fff"
+            class="fa-solid fa-thumbs-up"
+          ></i
+          >Like
+        </button>
+        <button
+          style="
+            margin-bottom: 15px;
+            width: 20%;
+            background-color: #174a4dbb;
+            color: #fff;
+            border-color: #174a4dbb;
+            font-weight: bold;
+          "
+        >
+          <i
+            style="margin-right: 15px; margin-bottom: 15px; color: #fff"
+            class="fa-solid fa-comment"
+          ></i
+          >Comment
+        </button>
+        </div>
+      </div>
+    </div>
+    <!-- ******************************************************************************************************************************************* -->
+    <div id="right" >
+        <div class="holy" style="
+        margin-top: 30px;
+        box-shadow: 1px 1px 15px 9px gray;
+        width: 95%;
+        padding-top: 20px;
+        padding-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-right: 15px;
+        color: gray;
+      ">
+            <p>Upcoming Events: </p>
+            <img style="width: 90%; margin-bottom: 15px;"  src="2.jpg" alt="">
+            <h6>Holiday</h6>
+            <p>Friday 15:00</p>
+            <button
+              style="
+                background-color: #5581847a;
+                color: #f9f5f5;
+                border-color: #86b4b75c;
+                font-weight: bold;
+                width: 54%;
+                margin-bottom: 15px; "
+                >Info
+            </button>
+        </div>
+        <!-- ************************************************************************************************* -->
+        <div class="holy" style="
+        margin-top: 30px;
+        box-shadow: 1px 1px 15px 9px gray;
+        width: 95%;
+        padding-top: 20px;
+        padding-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-right: 15px;
+        color: gray;
+      ">
+            <p>Friend Request </p>
+            <img style="width: 90%; margin-bottom: 15px;"  src="1.jpg" alt="">
+            <h6>Jan Doe</h6>
+            <div style="margin-bottom: 15px;" class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-success"><i class="fa-solid fa-check"></i></button>
+                <button type="button" class="btn btn-danger"><i class="fa-solid fa-xmark"></i></button>
+              </div>
+        </div>
+        <div class="holy" style="
+        margin-top: 30px;
+        box-shadow: 1px 1px 15px 9px gray;
+        width: 95%;
+        padding-top: 20px;
+        padding-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-right: 15px;
+        color: gray;
+      ">
+            <p>ADS </p>
+        </div>
+        <div class="holy" style="
+        margin-top: 30px;
+        box-shadow: 1px 1px 15px 9px gray;
+        width: 95%;
+        padding-top: 40px;
+        padding-left: 10px;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: center;    
+        align-items: center;
+        flex-direction: column;
+        padding-right: 15px;
+      ">
+           <i class="fa-solid fa-bug fa-3x"></i>
+        </div>
+    </div>
+    <script src="bootstrap-5.3.0-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
